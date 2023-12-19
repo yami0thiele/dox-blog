@@ -46,7 +46,7 @@ export function getStaticPaths() {
 
 const { category } = Astro.params;
 
-const posts = await Astro.glob<Post>(`/src/pages/code/*.md`);
+const posts = await Astro.glob<Post>(`/src/pages/*/*.md`);
 ```
 
 あとは  `/src/pages/index.astro` の記事の map 部分にfilterを追加
