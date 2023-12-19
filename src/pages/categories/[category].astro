@@ -1,0 +1,46 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import PostLi from "../../components/timeline/PostLi.astro";
+import type { Post } from "../../types/post";
+import { orderingOfPosts } from "../../utils/orderingOfPosts";
+
+export function getStaticPaths() {
+  return [{ params: { category: "code" } }];
+}
+
+const { category } = Astro.params;
+
+const posts = await Astro.glob<Post>(`/src/pages/code/*.md`);
+---
+
+<Layout title={category}>
+  <main class="container mx-auto">
+    <p
+      class="mb-6 text-lg font-normal text-center text-gray lg:text-xl sm:px-16 xl:text-xl"
+    >
+      Category: {category}
+    </p>
+    <div class="container">
+      <ol class="relative border-s border-blue">
+        {
+          posts
+            .filter((p) => p.frontmatter.category === category)
+            .sort((pa, pb) => orderingOfPosts(pa.frontmatter, pb.frontmatter))
+            .map((post) => <PostLi {...post.frontmatter} />)
+        }
+      </ol>
+    </div>
+  </main>
+</Layout>
+
+<style>
+  main {
+    margin: auto;
+    padding: 1rem;
+    width: 800px;
+    max-width: calc(100% - 2rem);
+    color: white;
+    font-size: 20px;
+    line-height: 1.6;
+  }
+</style>
