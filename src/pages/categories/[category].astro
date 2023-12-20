@@ -21,7 +21,7 @@ const posts = await Astro.glob<Post>(`/src/pages/*/*.md`);
       Category: {category}
     </p>
     <div class="container">
-      <ol class="relative border-s border-blue">
+      <ol class="relative border-s border-primary">
         {
           posts
             .filter((p) => p.frontmatter.category === category)

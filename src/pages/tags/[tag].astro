@@ -5,7 +5,7 @@ import type { Post } from "../../types/post";
 import { orderingOfPosts } from "../../utils/orderingOfPosts";
 
 export function getStaticPaths() {
-  return [{ params: { tag: "Astro" } }];
+  return [{ params: { tag: "Astro" } }, { params: { tag: "daisyUI" } }];
 }
 
 const { tag } = Astro.params;
@@ -21,7 +21,7 @@ const posts = await Astro.glob<Post>(`/src/pages/*/*.md`);
       Tag: {tag}
     </p>
     <div class="container">
-      <ol class="relative border-s border-blue">
+      <ol class="relative border-s border-primary">
         {
           posts
             .filter((p) => p.frontmatter.tags.includes(tag))

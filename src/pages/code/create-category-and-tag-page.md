@@ -20,11 +20,11 @@ created_at: 2023/12/20
 [Routing #Static (SSG) Mode](https://docs.astro.build/en/core-concepts/routing/#dynamic-routes)
 
 カテゴリ配下には以下のようなページを生成させる
-- `src/pages/categories/code.astro`
-- `src/pages/categories/etc.astro`
+- `/categories/code`
+- `/categories/etc`
 
 タグ配下には以下のようなページを生成させる
-- `src/pages/tags/Astro.astro`
+- `/tags/Astro`
 
 ### カテゴリページ
 

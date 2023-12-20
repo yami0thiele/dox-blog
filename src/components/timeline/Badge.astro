@@ -7,8 +7,4 @@ interface Props {
 const { href, label } = Astro.props;
 ---
 
-<a href={href}
-  ><span class={`bg-black text-white text-xs font-bold px-2.5 py-0.5 rounded`}
-    >{label}</span
-  ></a
->
+<a href={href}><span class="badge mr-2">{label}</span></a>

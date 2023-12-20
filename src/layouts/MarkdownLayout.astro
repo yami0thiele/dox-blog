@@ -6,7 +6,7 @@ const { title } = frontmatter;
 ---
 
 <Layout title={title}>
-  <div class="container bg-black p-8 rounded-xl mx-auto markdown-body">
+  <div class="container bg-base-100 p-8 rounded-xl mx-auto markdown-body">
     <slot />
   </div>
 </Layout>
@@ -26,7 +26,7 @@ const { title } = frontmatter;
     @apply mb-6 text-center text-3xl md:text-4xl lg:text-5xl;
   }
   .markdown-body > h2 {
-    @apply my-6 border-s-4 border-blue ps-4;
+    @apply my-6 border-s-4 border-primary ps-4;
   }
   .markdown-body > h2 {
     @apply text-2xl md:text-3xl lg:text-4xl;
@@ -38,9 +38,9 @@ const { title } = frontmatter;
     @apply my-4;
   }
   .markdown-body > pre {
-    @apply p-4 mb-6 rounded-xl;
+    @apply p-4 mb-6 rounded-xl mockup-code;
   }
   .markdown-body a {
-    @apply font-medium text-blue hover:underline;
+    @apply link link-secondary;
   }
 </style>

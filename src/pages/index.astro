@@ -15,7 +15,7 @@ const posts = await Astro.glob<Post>("../pages/*/*.md");
 			N Days of XXX (XXXに関するチャレンジ)に関する記録用
 		</p>
 		<div class="container">
-			<ol class="relative border-s border-blue">
+			<ol class="relative border-s border-primary">
 				{
 					posts
 						.sort((pa, pb) => orderingOfPosts(pa.frontmatter, pb.frontmatter))
