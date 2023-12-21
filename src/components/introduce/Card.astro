@@ -1,0 +1,25 @@
+---
+import { Icon } from "astro-icon";
+import { Image } from "astro:assets";
+import AvatarImage from "./assets/Avatar.jpg";
+---
+
+<div class="container my-4 rounded-xl mx-auto">
+  <div class="card card-side bg-base-100 shadow-xl">
+    <figure>
+      <Image src={AvatarImage} alt="アバター画像" format="webp" width="200" />
+    </figure>
+    <div class="card-body">
+      <div class="card-title text-primary">矢澪チール</div>
+      <p>仮想ってなんでしょう？</p>
+      <div class="card-actions justify-start">
+        <a href="https://github.com/yami0thiele">
+          <Icon class="w-8" name="mdi:github" />
+        </a>
+        <a href="https://twitter.com/dark_thiele">
+          <Icon class="w-8" name="mdi:twitter" />
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

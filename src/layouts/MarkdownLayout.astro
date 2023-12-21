@@ -6,8 +6,10 @@ const { title } = frontmatter;
 ---
 
 <Layout title={title}>
-  <div class="container bg-base-100 p-8 rounded-xl mx-auto markdown-body">
-    <slot />
+  <div class="container bg-base-100 p-8 rounded-xl mx-auto">
+    <div class="markdown-body">
+      <slot />
+    </div>
   </div>
 </Layout>
 <style is:global>
