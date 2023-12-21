@@ -55,7 +55,7 @@ import { Icon } from "astro-icon";
 
 [.astroファイル内の画像](https://docs.astro.build/ja/guides/images/#astro%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E5%86%85%E3%81%AE%E7%94%BB%E5%83%8F)
 
-今回は `src/components/introduce/assets/Avatar.jpg` を用意し、`Card.astro` の中で以下のようにインポートしました。
+今回は `/introduce/assets/Avatar.jpg` を用意し、`Card.astro` の中で以下のようにインポートしました。
 
 ```ts
 import { Image } from "astro:assets";
