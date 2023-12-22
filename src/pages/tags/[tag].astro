@@ -5,7 +5,11 @@ import type { Post } from "../../types/post";
 import { orderingOfPosts } from "../../utils/orderingOfPosts";
 
 export function getStaticPaths() {
-  return [{ params: { tag: "Astro" } }, { params: { tag: "daisyUI" } }];
+  return [
+    { params: { tag: "Astro" } },
+    { params: { tag: "daisyUI" } },
+    { params: { tag: "plan" } },
+  ];
 }
 
 const { tag } = Astro.params;
