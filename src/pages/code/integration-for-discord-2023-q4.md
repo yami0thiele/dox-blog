@@ -6,7 +6,7 @@ slug: integration-for-discord-2023-q4
 category: code
 tags:
   - plan
-created_at: 2023/12/22
+created_at: 2023/12/23
 ---
 
 # 個人開発計画！ (2023Q4)
