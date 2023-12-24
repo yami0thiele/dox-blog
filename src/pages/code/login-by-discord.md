@@ -20,6 +20,8 @@ created_at: 2023/12/24
 
 [単なる OAuth 2.0 を認証に使うと、車が通れるほどのどでかいセキュリティー・ホールができる](https://www.sakimura.org/2012/02/1487/)
 
+認証用のOpenID connectをDiscordはサポートしていないようなので考える必要があります。
+
 この開発では基本的にフロントエンドとバックエンド(APIサーバー)を分離しようと考えていましたが、バックエンドに送信された値 (例えば認可エンドポイントからのレスポンスに付与される state, code、Discordのトークンを渡す場合はそれ) の本来の持ち主がわからないのでこの機能についてはわけないことにします。
 
 ## フロー図
@@ -34,7 +36,7 @@ created_at: 2023/12/24
 
 仕様については以下に記載しています。
 
-[仕様](https://github.com/yami0thiele/integrations-for-discord/blob/master/document/feat_authentication/spec.md)n
+[仕様](https://github.com/yami0thiele/integrations-for-discord/blob/master/document/feat_authentication/spec.md)
 
 ## おわりに
 明日はauth用の環境構築かな...
