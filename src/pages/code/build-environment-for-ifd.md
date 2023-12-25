@@ -39,7 +39,7 @@ COPY --from=composer /usr/bin/composer /usr/bin/composer
 ```
 
 ### `backend`
-`node`を突っ込んでおき、あと `nest start` でサーバーを立ち上げられるように `nestks/cli` をインストールしておく。
+`node`を突っ込んでおき、あと `nest start` でサーバーを立ち上げられるように `nestjs/cli` をインストールしておく。
 依存パッケージも取得しておく (`yarn --frozen-lockfile`)
 
 だいたい以下の感じ
