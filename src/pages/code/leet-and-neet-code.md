@@ -6,18 +6,20 @@ slug: leet-and-neet-code
 category: code
 tags:
   - study
-created_at: 2023/12/26
+created_at: 2023/12/27
 ---
 
 # LeetCodeとかNeetCodeとか
 
 元々少しだけ競技プログラミングをかじっていた頃があります。あんまり自慢できるような成績でもなんでも無いのですがとりあえずAtCoderを緑色にはしましたっていう状態です。
+
 [AtCoder/thiele](https://atcoder.jp/users/thiele)
 
 改めてちゃんとデータ構造を学ぶ機会があってもいいなということで見つけたのがNeetCodeです。
 
 ## NeetCode
 まず、前提として[LeetCode](https://leetcode.com/problemset/)というサービスがあります。主に海外のエンジニアの選考過程で課されたコーディング問題が載せられているサービスです。
+
 このサービス、ちょっと困るのは、2023/12/26現在で2978問あるのですが、どれから手をつければいいのか・どういう風に手をつければ各分野網羅できるのかがわからないということです。
 
 そこの悩みを解消するのが[NeetCode - Roadmap](https://neetcode.io/roadmap)です。
